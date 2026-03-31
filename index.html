@@ -11,6 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
 
+  <!-- Fontshare — Zodiak (hero display font) -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@300,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,17 +26,21 @@
        NAVIGATION
   ═══════════════════════════════════════════════════════ -->
   <nav class="site-nav" id="site-nav" aria-label="Hlavní navigace">
-    <a href="#hero" class="nav-logo" aria-label="Chata Albrechtice — úvod">
-      <span class="nav-logo-name">Chata Albrechtice</span>
-      <span class="nav-logo-sub">Mariánská hora · Jizerské hory</span>
-    </a>
+    <div class="nav-capsule">
+      <a href="#hero" class="nav-logo" aria-label="Chata Albrechtice — úvod">
+        <span class="nav-logo-name">Chata Albrechtice</span>
+        <span class="nav-logo-sub">Mariánská hora · Jizerské hory</span>
+      </a>
 
-    <ul class="nav-links" role="list">
-      <li><a href="#galerie">Galerie</a></li>
-      <li><a href="#vybaveni">Vybavení</a></li>
-      <li><a href="#okoli">Okolí</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
-    </ul>
+      <div class="nav-sep" aria-hidden="true"></div>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#vybaveni">Vybavení</a></li>
+        <li><a href="#okoli">Okolí</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Otevřít menu" aria-expanded="false">
       <span></span>
@@ -58,7 +66,7 @@
     <section class="hero" id="hero" aria-label="Úvod">
       <img
         class="hero-image"
-        src="fotky/CHATA_MAIN.jpg"
+        src="fotky/chata_main_nanobanana.png"
         alt="Letecký pohled na chalupu Mariánská hora obklopenou zasněženým lesem v Jizerských horách"
         fetchpriority="high"
       >
@@ -76,7 +84,12 @@
       </div>
 
       <div class="hero-scroll" aria-hidden="true">
-        <div class="scroll-line"></div>
+        <span class="scroll-label">Scroll for more</span>
+        <div class="scroll-circle">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
       </div>
     </section>
 
