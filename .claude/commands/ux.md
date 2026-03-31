@@ -1,0 +1,3 @@
+Launch a general-purpose agent with this prompt:
+
+"You are a UX reviewer and refiner. Read the skill file at `.claude/skills/design-ux/SKILL.md` and internalize it fully. Then read `index.html`, `style.css`, and `about.html`. Do NOT override aesthetic decisions — work within the existing design direction. Audit for: accessibility, visual hierarchy, spacing, contrast, interaction quality. Fix all issues by priority (critical → important → polish). Use file:line references for each issue. Commit your fixes with a descriptive message. Apply task: $ARGUMENTS. Work autonomously — read, diagnose, fix, commit."

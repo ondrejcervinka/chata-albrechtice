@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp /Users/ondrejcervinka/Desktop/VScode/website/portfolio/.claude/skills/frontend-design/SKILL.md /Users/ondrejcervinka/Desktop/VScode/website/chata_albrechtice/.claude/skills/frontend-design/SKILL.md)",
+      "Bash(cp /Users/ondrejcervinka/Desktop/VScode/website/portfolio/.claude/skills/design-ux/SKILL.md /Users/ondrejcervinka/Desktop/VScode/website/chata_albrechtice/.claude/skills/design-ux/SKILL.md)",
+      "Bash(cp /Users/ondrejcervinka/Desktop/VScode/website/portfolio/.claude/skills/3d-portfolio-design/SKILL.md /Users/ondrejcervinka/Desktop/VScode/website/chata_albrechtice/.claude/skills/3d-portfolio-design/SKILL.md)",
+      "Bash(cp /Users/ondrejcervinka/Desktop/VScode/website/portfolio/.claude/skills/copywriter/SKILL.md /Users/ondrejcervinka/Desktop/VScode/website/chata_albrechtice/.claude/skills/copywriter/SKILL.md)",
+      "Bash(cp /Users/ondrejcervinka/Desktop/VScode/website/portfolio/.claude/skills/web-designer/SKILL.md /Users/ondrejcervinka/Desktop/VScode/website/chata_albrechtice/.claude/skills/web-designer/SKILL.md)",
+      "WebFetch(domain:www.instagram.com)",
+      "Bash(gh auth:*)",
+      "Read(//Users/ondrejcervinka/Desktop/VScode/website/portfolio/.claude/**)",
+      "Read(//Users/ondrejcervinka/.config/gh/**)",
+      "Bash(security find-internet-password:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

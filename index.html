@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chata Albrechtice — Chalupa Mariánská hora 776, Jizerské hory. Nově rekonstruovaná chalupa pro až 10 osob přímo u lyžařského areálu Tanvaldský Špičák.">
+  <title>Chata Albrechtice · Chalupa Mariánská hora · Jizerské hory</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip to main content (keyboard users) -->
+  <a href="#hero" class="skip-link">Přejít na obsah</a>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════════════ -->
+  <nav class="site-nav" id="site-nav" aria-label="Hlavní navigace">
+    <a href="#hero" class="nav-logo" aria-label="Chata Albrechtice — úvod">
+      <span class="nav-logo-name">Chata Albrechtice</span>
+      <span class="nav-logo-sub">Mariánská hora · Jizerské hory</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#vybaveni">Vybavení</a></li>
+      <li><a href="#okoli">Okolí</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Otevřít menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav drawer -->
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Mobilní navigace" aria-hidden="true">
+    <a href="#galerie" class="drawer-link">Galerie</a>
+    <a href="#vybaveni" class="drawer-link">Vybavení</a>
+    <a href="#okoli" class="drawer-link">Okolí</a>
+    <a href="#kontakt" class="drawer-link">Kontakt</a>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════
+         1. HERO
+    ═══════════════════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Úvod">
+      <img
+        class="hero-image"
+        src="fotky/CHATA_MAIN.jpg"
+        alt="Letecký pohled na chalupu Mariánská hora obklopenou zasněženým lesem v Jizerských horách"
+        fetchpriority="high"
+      >
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Chalupa Mariánská hora</h1>
+        <p class="hero-subtitle">Jizerské hory za dveřmi. Vlek U Tomáše za plotem.</p>
+        <a href="#kontakt" class="hero-cta">
+          Rezervovat
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         2. O CHATĚ
+    ═══════════════════════════════════════════════════════ -->
+    <section class="about" id="o-chate" aria-label="O chatě">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-text">
+            <span class="section-label reveal">O chatě</span>
+            <h2 class="reveal reveal-delay-1">Nově&nbsp;rekonstruovaná chalupa v&nbsp;srdci Jizerských hor</h2>
+            <div class="section-rule reveal reveal-delay-2"></div>
+            <p class="reveal reveal-delay-2">
+              Chalupa Mariánská hora 776 stojí v Jizerských horách — pár kroků od lyžařského
+              areálu Tanvaldský Špičák a přímo u vleku U Tomáše. Nově zrekonstruovaná,
+              s moderním interiérem. V zimě na sjezdovku, v létě na magistrálu —
+              bez auta, bez kompromisů.
+            </p>
+          </div>
+
+          <div class="about-stats" role="list" aria-label="Základní parametry chalupy">
+
+            <div class="stat-card reveal" role="listitem">
+              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div class="stat-value">10</div>
+              <div class="stat-label">osob celkem</div>
+            </div>
+
+            <div class="stat-card reveal reveal-delay-1" role="listitem">
+              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg></div>
+              <div class="stat-value">3</div>
+              <div class="stat-label">samostatné ložnice</div>
+            </div>
+
+            <div class="stat-card reveal reveal-delay-2" role="listitem">
+              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4 4 2.5 2.5"/><path d="M13.5 6.5a4.95 4.95 0 0 0-7 7"/><path d="M15 5 5 15"/><path d="M14 17v.01"/><path d="M10 16v.01"/><path d="M13 13v.01"/><path d="M16 10v.01"/></svg></div>
+              <div class="stat-value">2</div>
+              <div class="stat-label">koupelny</div>
+            </div>
+
+            <div class="stat-card reveal reveal-delay-3" role="listitem">
+              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg></div>
+              <div class="stat-value stat-value--word">Infra<br>sauna</div>
+              <div class="stat-label">v přízemí</div>
+            </div>
+
+            <div class="stat-card stat-card--full reveal reveal-delay-4" role="listitem">
+              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9l3-6h14l3 6v6a2 2 0 0 1-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div>
+              <div class="stat-value">3</div>
+              <div class="stat-label">parkovací místa přímo u chalupy</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         3. UBYTOVÁNÍ
+    ═══════════════════════════════════════════════════════ -->
+    <section class="accommodation" id="ubytovani" aria-label="Ubytování">
+      <div class="container">
+        <div class="accommodation-inner">
+
+          <div class="acc-text">
+            <span class="section-label reveal">Ubytování</span>
+            <h2 class="reveal reveal-delay-1">Pohodlí pro celou&nbsp;skupinu</h2>
+            <p class="reveal reveal-delay-2">
+              Tři ložnice, 8 lůžek a rozkládací gauč — chalupa pojme až 10 osob.
+              Horní patro propojené dřevěným schodištěm s přízemím, kde je obývák, kuchyň,
+              jídelna a lyžárna.
+            </p>
+
+            <div class="floor-block reveal reveal-delay-2">
+              <div class="floor-title">1. patro — spací část</div>
+              <ul class="floor-list" role="list">
+                <li class="floor-item">1. ložnice s manželskou postelí</li>
+                <li class="floor-item">2. ložnice s manželskou postelí a jednolůžkem</li>
+                <li class="floor-item">3. ložnice s jednolůžky a koutem</li>
+
+                <li class="floor-item">Odpočinkový pokoj s TV</li>
+                <li class="floor-item">Koupelna s vanou</li>
+              </ul>
+            </div>
+
+            <div class="floor-block reveal reveal-delay-3">
+              <div class="floor-title">Přízemí — společné prostory</div>
+              <ul class="floor-list" role="list">
+                <li class="floor-item">Obývací místnost s jídelním stolem a krbem</li>
+                <li class="floor-item">Plně vybavená kuchyňská linka</li>
+                <li class="floor-item">Lyžárna a sušárna</li>
+                <li class="floor-item">Koupelna se sprchovým koutem + infrasauna</li>
+                <li class="floor-item">Samostatné WC</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="acc-photos reveal reveal-delay-2">
+            <div class="acc-photo">
+              <img
+                src="fotky/obyvaci-mistnost-s-jidelnim-stolem-9690-32a6-1104411.jpg"
+                alt="Obývací místnost s jídelním stolem"
+                loading="lazy"
+              >
+            </div>
+            <div class="acc-photo">
+              <img
+                src="fotky/1-loznice-s-manzelskou-posteli-fe68-32a6-1104445.jpg"
+                alt="1. ložnice s manželskou postelí"
+                loading="lazy"
+              >
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         4. VYBAVENÍ
+    ═══════════════════════════════════════════════════════ -->
+    <section class="amenities" id="vybaveni" aria-label="Vybavení chalupy">
+      <div class="container">
+
+        <div class="amenities-header">
+          <span class="section-label reveal">Vybavení</span>
+          <h2 class="reveal reveal-delay-1">Vše, co budete potřebovat</h2>
+        </div>
+
+        <div class="amenities-grid" role="list" aria-label="Seznam vybavení">
+
+          <div class="amenity-item reveal" role="listitem">
+            <div class="amenity-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div>
+            <div class="amenity-text">Krb</div>
+          </div>
+
+          <div class="amenity-item reveal reveal-delay-1" role="listitem">
+            <div class="amenity-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg></div>
+            <div class="amenity-text">Infrasauna</div>
+          </div>
+
+          <div class="amenity-item reveal reveal-delay-2" role="listitem">
+            <div class="amenity-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><line x1="4" x2="20" y1="11" y2="11"/></svg></div>
+            <div class="amenity-text">Koupelna s vanou</div>
+          </div>
+
+          <div class="amenity-item reveal reveal-delay-3" role="listitem">
+            <div class="amenity-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4 4 2.5 2.5"/><path d="M13.5 6.5a4.95 4.95 0 0 0-7 7"/><path d="M15 5 5 15"/><path d="M14 17v.01"/><path d="M10 16v.01"/><path d="M13 13v.01"/><path d="M16 10v.01"/></svg></div>
+            <div class="amenity-text">Sprchový kout</div>
+          </div>
+
+          <div class="amenity-item reveal" role="listitem">
+            <div class="amenity-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></div>
+            <div class="amenity-text">Kuchyňská linka</div>
+          </div>
+
+          <div class="amenity-item reveal reveal-delay-1" role="listitem">
+            <div class="amenity-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m2 20 6-6"/><path d="m17 13-5 5-4-4 7-7"/><circle cx="17" cy="5" r="2"/><path d="m22 20-6-6"/></svg></div>
+            <div class="amenity-text">Lyžárna — 8 párů bot</div>
+          </div>
+
+          <div class="amenity-item reveal reveal-delay-2" role="listitem">
+            <div class="amenity-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg></div>
+            <div class="amenity-text">TV</div>
+          </div>
+
+          <div class="amenity-item reveal reveal-delay-3" role="listitem">
+            <div class="amenity-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9l3-6h14l3 6v6a2 2 0 0 1-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div>
+            <div class="amenity-text">3 parkovací místa</div>
+          </div>
+
+          <div class="amenity-item reveal" role="listitem">
+            <div class="amenity-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+            <div class="amenity-text">El. vytápění nebo krb</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         5. OKOLÍ & AKTIVITY
+    ═══════════════════════════════════════════════════════ -->
+    <section class="surroundings" id="okoli" aria-label="Okolí a aktivity">
+      <div class="container">
+
+        <div class="surroundings-header">
+          <span class="section-label reveal">Okolí</span>
+          <h2 class="reveal reveal-delay-1">Čtyři roční období, nekonečné možnosti</h2>
+        </div>
+
+        <div class="seasons-grid">
+
+          <div class="season-card reveal">
+            <div class="season-header">
+              <span class="season-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="2" x2="22" y1="12" y2="12"/><line x1="12" x2="12" y1="2" y2="22"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/></svg></span>
+              <h3 class="season-title">Zima</h3>
+            </div>
+            <ul class="season-list" role="list">
+              <li>Sjezdovka přímo u chalupy — vlek U Tomáše</li>
+              <li>Tanvaldský Špičák — lyžařský areál 5 minut pěšky</li>
+              <li>Jizerská padesátka — běžecké trasy magistrály</li>
+              <li>Bikepark Špičák (zimní provoz)</li>
+            </ul>
+          </div>
+
+          <div class="season-card reveal reveal-delay-2">
+            <div class="season-header">
+              <span class="season-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
+              <h3 class="season-title">Jaro / léto / podzim</h3>
+            </div>
+            <ul class="season-list" role="list">
+              <li>Turistika a cyklistika — Jizerská magistrála</li>
+              <li>Bikepark Tanvaldský Špičák</li>
+              <li>Koupání — Přehrada Desná, Nádrž Souš</li>
+              <li>Houbaření, rozhledny, Muzeum hraček Detoa</li>
+              <li>Liberec: Zoo, IQ Landia, Babylon, Ještěd</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Nearby attractions -->
+        <div class="reveal">
+          <span class="section-label section-label--center">Blízká místa</span>
+        </div>
+        <div class="attractions reveal reveal-delay-1" role="list" aria-label="Blízká místa a atrakce">
+          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Tanvaldský Špičák</span>
+          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 20 6-6"/><path d="m17 13-5 5-4-4 7-7"/><circle cx="17" cy="5" r="2"/><path d="m22 20-6-6"/></svg> Jizerská magistrála</span>
+          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Albrechtice v Jizerských horách</span>
+          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg> Přehrada Desná &amp; Souš</span>
+          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg> Rozhledny a vyhlídky</span>
+          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg> Liberec — Zoo, Ještěd, IQ Landia</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         6. GALERIE
+    ═══════════════════════════════════════════════════════ -->
+    <section class="gallery" id="galerie" aria-label="Fotogalerie chalupy">
+      <div class="container">
+
+        <div class="gallery-header">
+          <span class="section-label reveal">Galerie</span>
+          <h2 class="reveal reveal-delay-1">Chalupa v obrazech</h2>
+        </div>
+
+        <div class="gallery-grid reveal">
+
+          <div class="gallery-item">
+            <img
+              src="fotky/jidelni-stul-f820-32a6-1104413.jpg"
+              alt="Jídelní stůl v chalupě"
+              loading="lazy"
+            >
+            <div class="gallery-caption">Jídelní stůl</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="fotky/kuchyne-252c-32a6-1104414.jpg"
+              alt="Moderní kuchyně"
+              loading="lazy"
+            >
+            <div class="gallery-caption">Kuchyně</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="fotky/koupelna-s-vanou-v-prvnim-patre-41ce-32a6-1104453.jpg"
+              alt="Koupelna s vanou v 1. patře"
+              loading="lazy"
+            >
+            <div class="gallery-caption">Koupelna s vanou</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="fotky/infrasauna-74c7-32a6-1104437.jpg"
+              alt="Infrasauna v přízemí"
+              loading="lazy"
+            >
+            <div class="gallery-caption">Infrasauna</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="fotky/pohled-na-chalupu-3d60-32a6-1104402.jpg"
+              alt="Pohled na chalupu z exteriéru"
+              loading="lazy"
+            >
+            <div class="gallery-caption">Exteriér chalupy</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="fotky/pohled-na-chalupu-ze-shora-7ff0-32a6-1104468.jpg"
+              alt="Letecký pohled na chalupu"
+              loading="lazy"
+            >
+            <div class="gallery-caption">Letecký pohled</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         7. KONTAKT
+    ═══════════════════════════════════════════════════════ -->
+    <section class="contact" id="kontakt" aria-label="Kontakt a rezervace">
+      <div class="container">
+        <div class="contact-inner">
+
+          <div class="contact-text">
+            <span class="section-label reveal">Kontakt</span>
+            <h2 class="reveal reveal-delay-1">Pošlete dotaz — termíny se plní rychle.</h2>
+            <div class="section-rule reveal reveal-delay-2"></div>
+
+            <div class="contact-details reveal reveal-delay-2">
+              <div class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <span>Mariánská hora 776, Albrechtice v Jizerských horách</span>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+                <span>info@chata-albrechtice.cz</span>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.39 2 2 0 0 1 3.55 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.69A16 16 0 0 0 16 16.91l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <a href="tel:+420728138020" style="color:inherit;text-decoration:none;">+420 728 138 020</a>
+              </div>
+            </div>
+
+            <div class="contact-ctas reveal reveal-delay-3">
+              <p class="booking-label">
+                Rezervace přes platformy:
+              </p>
+              <div class="cta-group">
+                <a href="https://www.e-chalupy.cz/albrechtice-v-jizerskych-horach-ubytovani" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Rezervovat na e-chalupy.cz">
+                  Rezervovat na e-chalupy.cz
+                </a>
+                <a href="tel:+420728138020" class="btn btn-outline">
+                  Zavolat
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact-visual reveal reveal-delay-2">
+            <div class="contact-photo-wrap">
+              <img
+                src="fotky/bocni-pohled-na-chalupu-a9fd-32a6-1104410.jpg"
+                alt="Boční pohled na chalupu Mariánská hora"
+                loading="lazy"
+              >
+            </div>
+            <div class="contact-address-badge" aria-hidden="true">
+              <div class="badge-name">Chata Albrechtice</div>
+              <div class="badge-addr">Mariánská hora 776 · Jizerské hory</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer class="site-footer" aria-label="Zápatí stránky">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-name">Chata Albrechtice</span>
+          <span class="footer-tagline">Mariánská hora · Jizerské hory</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> Chalupa Mariánská hora 776.<br>
+          Všechna práva vyhrazena.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════
+       JAVASCRIPT
+  ═══════════════════════════════════════════════════════ -->
+  <script>
+    // ── Footer year ────────────────────────────────────────
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    // ── Nav: scroll state ──────────────────────────────────
+    const nav = document.getElementById('site-nav');
+    const SCROLL_THRESHOLD = 60;
+
+    function updateNav() {
+      if (window.scrollY > SCROLL_THRESHOLD) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+
+    // ── Mobile nav drawer ──────────────────────────────────
+    const toggle  = document.getElementById('nav-toggle');
+    const drawer  = document.getElementById('nav-drawer');
+    const overlay = document.getElementById('nav-overlay');
+
+    function openMenu() {
+      toggle.classList.add('open');
+      drawer.classList.add('open');
+      overlay.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      drawer.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      // Move focus into first drawer link
+      const firstLink = drawer.querySelector('a');
+      if (firstLink) firstLink.focus();
+    }
+
+    function closeMenu() {
+      toggle.classList.remove('open');
+      drawer.classList.remove('open');
+      overlay.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      drawer.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      // Return focus to the toggle button
+      toggle.focus();
+    }
+
+    toggle.addEventListener('click', () => {
+      toggle.classList.contains('open') ? closeMenu() : openMenu();
+    });
+
+    overlay.addEventListener('click', closeMenu);
+
+    // Close on drawer link click
+    drawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggle.classList.contains('open')) {
+        closeMenu();
+      }
+    });
+
+    // ── Scroll reveal ──────────────────────────────────────
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealEls = document.querySelectorAll('.reveal');
+
+    if (prefersReducedMotion) {
+      // Skip animation entirely — mark all as visible immediately
+      revealEls.forEach(el => el.classList.add('visible'));
+    } else {
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: '0px 0px -40px 0px'
+        }
+      );
+
+      revealEls.forEach(el => revealObserver.observe(el));
+    }
+  </script>
+
+</body>
+</html>
