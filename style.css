@@ -428,19 +428,6 @@ ul { list-style: none; }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.hero-eyebrow {
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.75);
-  border: 1px solid rgba(255,255,255,0.28);
-  padding: 0.35em 1.1em;
-  border-radius: 99px;
-  backdrop-filter: blur(4px);
-}
-
 .hero-title {
   font-family: 'Zodiak', var(--font-serif);
   font-size: clamp(3.8rem, 9vw, 8rem);
@@ -508,14 +495,6 @@ ul { list-style: none; }
 
 @keyframes fadeIn {
   to { opacity: 1; }
-}
-
-.scroll-label {
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.65);
 }
 
 .scroll-circle {
@@ -896,7 +875,6 @@ ul { list-style: none; }
 .attraction-tag:hover {
   background: rgba(45,74,45,0.14);
   border-color: rgba(45,74,45,0.25);
-  transform: translateY(-1px);
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -1119,30 +1097,6 @@ ul { list-style: none; }
 .btn-outline:hover {
   background: var(--color-forest-faded);
   box-shadow: 0 4px 16px rgba(45,74,45,0.12);
-}
-
-.btn-wood {
-  background: var(--color-wood);
-  color: #fff;
-  border-color: var(--color-wood);
-}
-
-.btn-wood:hover {
-  background: var(--color-wood-lt);
-  box-shadow: 0 6px 22px rgba(139,99,67,0.32);
-}
-
-/* Restaurants callout */
-.restaurants-note {
-  font-size: 0.82rem;
-  color: var(--color-text-faint);
-  line-height: 1.5;
-  margin-top: var(--space-lg);
-}
-
-.restaurants-note strong {
-  color: var(--color-text-soft);
-  font-weight: 500;
 }
 
 /* Contact visual */
@@ -1431,6 +1385,7 @@ ul { list-style: none; }
   .hero-content { animation: none; opacity: 1; transform: none; }
   .hero-scroll  { animation: none; opacity: 1; }
   .scroll-line  { animation: none; }
+  .scroll-circle { animation: none; }
 
   /* Kill scroll-reveal motion — make elements visible immediately */
   .reveal {
