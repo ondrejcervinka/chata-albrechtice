@@ -87,7 +87,7 @@
     <section class="hero" id="hero" aria-label="Úvod">
       <img
         class="hero-image"
-        src="fotky/chata_main_nanobanana.png"
+        src="fotky/CHATA_MAIN_goldenhour.png"
         alt="Letecký pohled na chalupu Mariánská hora obklopenou zasněženým lesem v Jizerských horách"
         fetchpriority="high"
       >
@@ -104,13 +104,13 @@
         </a>
       </div>
 
-      <div class="hero-scroll" aria-hidden="true">
+      <button class="hero-scroll" id="hero-scroll" aria-label="Přejít na obsah stránky">
         <div class="scroll-circle">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-      </div>
+      </button>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════
@@ -350,12 +350,12 @@
           <span class="section-label section-label--center">Blízká místa</span>
         </div>
         <div class="attractions reveal reveal-delay-1" role="list" aria-label="Blízká místa a atrakce">
-          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Tanvaldský Špičák</span>
-          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 20 6-6"/><path d="m17 13-5 5-4-4 7-7"/><circle cx="17" cy="5" r="2"/><path d="m22 20-6-6"/></svg> Jizerská magistrála</span>
-          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Albrechtice v Jizerských horách</span>
-          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg> Přehrada Desná &amp; Souš</span>
-          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg> Rozhledny a vyhlídky</span>
-          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg> Liberec: Zoo, Ještěd, IQ Landia</span>
+          <a class="attraction-tag" role="listitem" href="https://lyzovani.spicak.cz/cz/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Tanvaldský Špičák</a>
+          <a class="attraction-tag" role="listitem" href="https://www.jizerskamagistrala.cz/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 20 6-6"/><path d="m17 13-5 5-4-4 7-7"/><circle cx="17" cy="5" r="2"/><path d="m22 20-6-6"/></svg> Jizerská magistrála</a>
+          <a class="attraction-tag" role="listitem" href="https://maps.google.com/?q=Albrechtice+v+Jizersk%C3%BDch+hor%C3%A1ch" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Albrechtice v Jizerských horách</a>
+          <a class="attraction-tag" role="listitem" href="https://maps.google.com/?q=P%C5%99ehrada+Desn%C3%A1+Jizersk%C3%A9+hory" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg> Přehrada Desná &amp; Souš</a>
+          <a class="attraction-tag" role="listitem" href="https://www.regiontourist.cz/co-podniknout/rozhledny-a-vyhlidky/lokalita/albrechtice-v-jizerskych-horach/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg> Rozhledny a vyhlídky</a>
+          <a class="attraction-tag" role="listitem" href="https://zooliberec.cz/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg> Liberec: Zoo, Ještěd, IQ Landia</a>
         </div>
 
       </div>
@@ -510,6 +510,12 @@
 
     window.addEventListener('scroll', updateNav, { passive: true });
     updateNav();
+
+    // ── Scroll indicator ───────────────────────────────────
+    document.getElementById('hero-scroll').addEventListener('click', () => {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      document.getElementById('o-chate').scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth' });
+    });
 
     // ── Mobile nav drawer ──────────────────────────────────
     const toggle  = document.getElementById('nav-toggle');
