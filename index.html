@@ -586,6 +586,12 @@
       if (e.key !== 'Tab') return;
       const first = lbFocusable[0];
       const last  = lbFocusable[lbFocusable.length - 1];
+      // If focus has wandered outside the lightbox, pull it back
+      if (!lightbox.contains(document.activeElement)) {
+        e.preventDefault();
+        first.focus();
+        return;
+      }
       if (e.shiftKey) {
         if (document.activeElement === first) { e.preventDefault(); last.focus(); }
       } else {
@@ -593,7 +599,7 @@
       }
     }
 
-    lightbox.addEventListener('keydown', trapLightboxFocus);
+    document.addEventListener('keydown', trapLightboxFocus);
 
     // Track which element opened the lightbox so we can return focus on close
     let lbOpener = null;
