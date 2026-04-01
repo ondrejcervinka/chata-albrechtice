@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chalupa pro 10 osob přímo u vleku U Tomáše — 5 minut od Tanvaldského Špičáku. Nově zrekonstruovaná, s infrasaunou a lyžárnou. Jizerské hory.">
+  <meta name="description" content="Chalupa pro 10 osob přímo u vleku U Tomáše. 5 minut od Tanvaldského Špičáku. Nově zrekonstruovaná, s infrasaunou a lyžárnou. Jizerské hory.">
   <title>Chata Albrechtice · Chalupa Mariánská hora · Jizerské hory</title>
 
   <!-- Google Fonts -->
@@ -60,6 +60,25 @@
   </nav>
   <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
 
+  <!-- ═══════════════════════════════════════════════════════
+       LIGHTBOX
+  ═══════════════════════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Zobrazení fotografie" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Zavřít">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Předchozí fotografie">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Další fotografie">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+    <div class="lightbox-inner">
+      <img class="lightbox-img" id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
   <main>
 
     <!-- ═══════════════════════════════════════════════════════
@@ -107,40 +126,50 @@
             <div class="section-rule reveal reveal-delay-2"></div>
             <p class="reveal reveal-delay-2">
               Nástup na vlek U Tomáše je z pozemku. Sjezdovky Tanvaldského Špičáku jsou 5 minut pěšky.
-              V létě začíná Jizerská magistrála za rohem. Auto v zimě nepotřebujete — a to je přesně ten bod.
+              V létě začíná Jizerská magistrála za rohem. Auto v zimě nepotřebujete. A to je přesně ten bod.
             </p>
           </div>
 
           <div class="about-stats" role="list" aria-label="Základní parametry chalupy">
 
             <div class="stat-card reveal" role="listitem">
-              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-              <div class="stat-value">10</div>
-              <div class="stat-label">osob celkem</div>
+              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div class="stat-card-text">
+                <div class="stat-value">10 osob</div>
+                <div class="stat-label">celková kapacita</div>
+              </div>
             </div>
 
             <div class="stat-card reveal reveal-delay-1" role="listitem">
-              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg></div>
-              <div class="stat-value">3</div>
-              <div class="stat-label">samostatné ložnice</div>
+              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg></div>
+              <div class="stat-card-text">
+                <div class="stat-value">3 ložnice</div>
+                <div class="stat-label">samostatné, v 1. patře</div>
+              </div>
             </div>
 
             <div class="stat-card reveal reveal-delay-2" role="listitem">
-              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4 4 2.5 2.5"/><path d="M13.5 6.5a4.95 4.95 0 0 0-7 7"/><path d="M15 5 5 15"/><path d="M14 17v.01"/><path d="M10 16v.01"/><path d="M13 13v.01"/><path d="M16 10v.01"/></svg></div>
-              <div class="stat-value">2</div>
-              <div class="stat-label">koupelny</div>
+              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4 4 2.5 2.5"/><path d="M13.5 6.5a4.95 4.95 0 0 0-7 7"/><path d="M15 5 5 15"/><path d="M14 17v.01"/><path d="M10 16v.01"/><path d="M13 13v.01"/><path d="M16 10v.01"/></svg></div>
+              <div class="stat-card-text">
+                <div class="stat-value">2 koupelny</div>
+                <div class="stat-label">sprcha + vana</div>
+              </div>
             </div>
 
             <div class="stat-card reveal reveal-delay-3" role="listitem">
-              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg></div>
-              <div class="stat-value stat-value--word">Infra<br>sauna</div>
-              <div class="stat-label">v přízemí</div>
+              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg></div>
+              <div class="stat-card-text">
+                <div class="stat-value">Infrasauna</div>
+                <div class="stat-label">v přízemí</div>
+              </div>
             </div>
 
-            <div class="stat-card stat-card--full reveal reveal-delay-4" role="listitem">
-              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9l3-6h14l3 6v6a2 2 0 0 1-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div>
-              <div class="stat-value">3</div>
-              <div class="stat-label">parkovací místa přímo u chalupy</div>
+            <div class="stat-card reveal reveal-delay-4" role="listitem">
+              <div class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9l3-6h14l3 6v6a2 2 0 0 1-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div>
+              <div class="stat-card-text">
+                <div class="stat-value">3 parkovací místa</div>
+                <div class="stat-label">přímo u chalupy</div>
+              </div>
             </div>
 
           </div>
@@ -157,14 +186,14 @@
 
           <div class="acc-text">
             <span class="section-label reveal">Ubytování</span>
-            <h2 class="reveal reveal-delay-1">Tři ložnice, deset míst — a vlastní lyžárna.</h2>
+            <h2 class="reveal reveal-delay-1">Tři ložnice, deset míst a vlastní lyžárna.</h2>
             <p class="reveal reveal-delay-2">
-              Tři ložnice, 8 pevných lůžek, rozkládací gauč — dohromady místo pro 10 osob.
+              Tři ložnice, 8 pevných lůžek, rozkládací gauč. Celkem místo pro 10 osob.
               V přízemí obývák s krbem, plně vybavená kuchyň a lyžárna. V patře koupelna s vanou.
             </p>
 
             <div class="floor-block reveal reveal-delay-2">
-              <div class="floor-title">1. patro — spací část</div>
+              <div class="floor-title">1. patro: spací část</div>
               <ul class="floor-list" role="list">
                 <li class="floor-item">1. ložnice s manželskou postelí</li>
                 <li class="floor-item">2. ložnice s manželskou postelí a jednolůžkem</li>
@@ -176,7 +205,7 @@
             </div>
 
             <div class="floor-block reveal reveal-delay-3">
-              <div class="floor-title">Přízemí — společné prostory</div>
+              <div class="floor-title">Přízemí: společné prostory</div>
               <ul class="floor-list" role="list">
                 <li class="floor-item">Obývací místnost s jídelním stolem a krbem</li>
                 <li class="floor-item">Plně vybavená kuchyňská linka</li>
@@ -193,6 +222,8 @@
                 src="fotky/obyvaci-mistnost-s-jidelnim-stolem-9690-32a6-1104411.jpg"
                 alt="Obývací místnost s jídelním stolem"
                 loading="lazy"
+                data-lightbox
+                tabindex="0"
               >
             </div>
             <div class="acc-photo">
@@ -200,6 +231,8 @@
                 src="fotky/1-loznice-s-manzelskou-posteli-fe68-32a6-1104445.jpg"
                 alt="1. ložnice s manželskou postelí"
                 loading="lazy"
+                data-lightbox
+                tabindex="0"
               >
             </div>
           </div>
@@ -248,7 +281,7 @@
 
           <div class="amenity-item reveal reveal-delay-1" role="listitem">
             <div class="amenity-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m2 20 6-6"/><path d="m17 13-5 5-4-4 7-7"/><circle cx="17" cy="5" r="2"/><path d="m22 20-6-6"/></svg></div>
-            <div class="amenity-text">Lyžárna — 8 párů bot</div>
+            <div class="amenity-text">Lyžárna pro 8 párů bot</div>
           </div>
 
           <div class="amenity-item reveal reveal-delay-2" role="listitem">
@@ -278,7 +311,7 @@
 
         <div class="surroundings-header">
           <span class="section-label reveal">Okolí</span>
-          <h2 class="reveal reveal-delay-1">V zimě sjezdovky. V létě magistrála. Zbytek roku — klid.</h2>
+          <h2 class="reveal reveal-delay-1">V zimě sjezdovky. V létě magistrála. Zbytek roku jen klid.</h2>
         </div>
 
         <div class="seasons-grid">
@@ -289,9 +322,9 @@
               <h3 class="season-title">Zima</h3>
             </div>
             <ul class="season-list" role="list">
-              <li>Sjezdovka přímo u chalupy — vlek U Tomáše</li>
-              <li>Tanvaldský Špičák — lyžařský areál 5 minut pěšky</li>
-              <li>Jizerská padesátka — běžecké trasy magistrály</li>
+              <li>Sjezdovka U Tomáše přímo u chalupy</li>
+              <li>Tanvaldský Špičák, 5 minut pěšky</li>
+              <li>Jizerská padesátka a běžecké trasy magistrály</li>
               <li>Bikepark Špičák (zimní provoz)</li>
             </ul>
           </div>
@@ -302,9 +335,9 @@
               <h3 class="season-title">Jaro / léto / podzim</h3>
             </div>
             <ul class="season-list" role="list">
-              <li>Turistika a cyklistika — Jizerská magistrála</li>
+              <li>Turistika a cyklistika po Jizerské magistrále</li>
               <li>Bikepark Tanvaldský Špičák</li>
-              <li>Koupání — Přehrada Desná, Nádrž Souš</li>
+              <li>Koupání na Přehradě Desná a Nádrži Souš</li>
               <li>Houbaření, rozhledny, Muzeum hraček Detoa</li>
               <li>Liberec: Zoo, IQ Landia, Babylon, Ještěd</li>
             </ul>
@@ -322,7 +355,7 @@
           <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Albrechtice v Jizerských horách</span>
           <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg> Přehrada Desná &amp; Souš</span>
           <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg> Rozhledny a vyhlídky</span>
-          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg> Liberec — Zoo, Ještěd, IQ Landia</span>
+          <span class="attraction-tag" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg> Liberec: Zoo, Ještěd, IQ Landia</span>
         </div>
 
       </div>
@@ -341,57 +374,33 @@
 
         <div class="gallery-grid reveal">
 
-          <div class="gallery-item">
-            <img
-              src="fotky/jidelni-stul-f820-32a6-1104413.jpg"
-              alt="Jídelní stůl v chalupě"
-              loading="lazy"
-            >
+          <div class="gallery-item" tabindex="0" data-lightbox data-caption="Jídelní stůl">
+            <img src="fotky/jidelni-stul-f820-32a6-1104413.jpg" alt="Jídelní stůl v chalupě" loading="lazy">
             <div class="gallery-caption">Jídelní stůl</div>
           </div>
 
-          <div class="gallery-item">
-            <img
-              src="fotky/kuchyne-252c-32a6-1104414.jpg"
-              alt="Moderní kuchyně"
-              loading="lazy"
-            >
+          <div class="gallery-item" tabindex="0" data-lightbox data-caption="Kuchyně">
+            <img src="fotky/kuchyne-252c-32a6-1104414.jpg" alt="Moderní kuchyně" loading="lazy">
             <div class="gallery-caption">Kuchyně</div>
           </div>
 
-          <div class="gallery-item">
-            <img
-              src="fotky/koupelna-s-vanou-v-prvnim-patre-41ce-32a6-1104453.jpg"
-              alt="Koupelna s vanou v 1. patře"
-              loading="lazy"
-            >
+          <div class="gallery-item" tabindex="0" data-lightbox data-caption="Koupelna s vanou">
+            <img src="fotky/koupelna-s-vanou-v-prvnim-patre-41ce-32a6-1104453.jpg" alt="Koupelna s vanou v 1. patře" loading="lazy">
             <div class="gallery-caption">Koupelna s vanou</div>
           </div>
 
-          <div class="gallery-item">
-            <img
-              src="fotky/infrasauna-74c7-32a6-1104437.jpg"
-              alt="Infrasauna v přízemí"
-              loading="lazy"
-            >
+          <div class="gallery-item" tabindex="0" data-lightbox data-caption="Infrasauna">
+            <img src="fotky/infrasauna-74c7-32a6-1104437.jpg" alt="Infrasauna v přízemí" loading="lazy">
             <div class="gallery-caption">Infrasauna</div>
           </div>
 
-          <div class="gallery-item">
-            <img
-              src="fotky/pohled-na-chalupu-3d60-32a6-1104402.jpg"
-              alt="Pohled na chalupu z exteriéru"
-              loading="lazy"
-            >
+          <div class="gallery-item" tabindex="0" data-lightbox data-caption="Exteriér chalupy">
+            <img src="fotky/pohled-na-chalupu-3d60-32a6-1104402.jpg" alt="Pohled na chalupu z exteriéru" loading="lazy">
             <div class="gallery-caption">Exteriér chalupy</div>
           </div>
 
-          <div class="gallery-item">
-            <img
-              src="fotky/pohled-na-chalupu-ze-shora-7ff0-32a6-1104468.jpg"
-              alt="Letecký pohled na chalupu"
-              loading="lazy"
-            >
+          <div class="gallery-item" tabindex="0" data-lightbox data-caption="Letecký pohled">
+            <img src="fotky/pohled-na-chalupu-ze-shora-7ff0-32a6-1104468.jpg" alt="Letecký pohled na chalupu" loading="lazy">
             <div class="gallery-caption">Letecký pohled</div>
           </div>
 
@@ -408,7 +417,7 @@
 
           <div class="contact-text">
             <span class="section-label reveal">Kontakt</span>
-            <h2 class="reveal reveal-delay-1">Pošlete dotaz — termíny se plní rychle.</h2>
+            <h2 class="reveal reveal-delay-1">Pošlete dotaz. Termíny se plní rychle.</h2>
             <div class="section-rule reveal reveal-delay-2"></div>
 
             <div class="contact-details reveal reveal-delay-2">
@@ -546,6 +555,80 @@
       if (e.key === 'Escape' && toggle.classList.contains('open')) {
         closeMenu();
       }
+    });
+
+    // ── Lightbox ───────────────────────────────────────────
+    const lightbox     = document.getElementById('lightbox');
+    const lbImg        = document.getElementById('lightbox-img');
+    const lbCaption    = document.getElementById('lightbox-caption');
+    const lbClose      = document.getElementById('lightbox-close');
+    const lbPrev       = document.getElementById('lightbox-prev');
+    const lbNext       = document.getElementById('lightbox-next');
+
+    let lbItems = [];
+    let lbIndex = 0;
+
+    function openLightbox(items, index) {
+      lbItems = items;
+      lbIndex = index;
+      lbImg.src = lbItems[lbIndex].src;
+      lbImg.alt = lbItems[lbIndex].alt;
+      lbCaption.textContent = lbItems[lbIndex].caption;
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      lbClose.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    function showSlide(newIndex) {
+      lbImg.classList.add('switching');
+      setTimeout(() => {
+        lbIndex = (newIndex + lbItems.length) % lbItems.length;
+        lbImg.src = lbItems[lbIndex].src;
+        lbImg.alt = lbItems[lbIndex].alt;
+        lbCaption.textContent = lbItems[lbIndex].caption;
+        lbImg.classList.remove('switching');
+      }, 150);
+    }
+
+    // Attach click to acc-photo images (own group)
+    const accImgs = [...document.querySelectorAll('.acc-photo img[data-lightbox]')];
+    const accItems = accImgs.map(img => ({ src: img.src, alt: img.alt, caption: img.alt }));
+    accImgs.forEach((img, i) => {
+      img.addEventListener('click', () => openLightbox(accItems, i));
+      img.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(accItems, i); } });
+    });
+
+    // Attach click to gallery items (own group)
+    const galleryEls = [...document.querySelectorAll('.gallery-item[data-lightbox]')];
+    const galleryItems = galleryEls.map(el => {
+      const img = el.querySelector('img');
+      return { src: img.src, alt: img.alt, caption: el.dataset.caption || img.alt };
+    });
+    galleryEls.forEach((el, i) => {
+      el.addEventListener('click', () => openLightbox(galleryItems, i));
+      el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(galleryItems, i); } });
+    });
+
+    lbClose.addEventListener('click', closeLightbox);
+    lbPrev.addEventListener('click', () => showSlide(lbIndex - 1));
+    lbNext.addEventListener('click', () => showSlide(lbIndex + 1));
+
+    // Close on backdrop click
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+
+    // Keyboard: Escape, arrows
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape')      closeLightbox();
+      if (e.key === 'ArrowLeft')   showSlide(lbIndex - 1);
+      if (e.key === 'ArrowRight')  showSlide(lbIndex + 1);
     });
 
     // ── Scroll reveal ──────────────────────────────────────

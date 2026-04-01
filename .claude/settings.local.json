@@ -12,7 +12,10 @@
       "Read(//Users/ondrejcervinka/.config/gh/**)",
       "Bash(security find-internet-password:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(gh repo:*)",
+      "Bash(git push:*)",
+      "Bash(python3 -c \":*)"
     ]
   }
 }
